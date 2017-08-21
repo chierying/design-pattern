@@ -1,4 +1,7 @@
-package com.zb.command;
+package com.zb.command.command;
+
+import com.zb.command.group.CodeGroup;
+import com.zb.command.group.PageGroup;
 
 /**
  * Created by v_zhangbing on 2017/8/19.

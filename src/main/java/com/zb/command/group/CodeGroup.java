@@ -1,4 +1,4 @@
-package com.zb.command;
+package com.zb.command.group;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package com.zb.command;
+package com.zb.command.command;
 
 /**
  * 删除页面的命令

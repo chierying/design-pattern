@@ -1,4 +1,4 @@
-package com.zb.command;
+package com.zb.command.group;
 
 /**
  * 工作组
