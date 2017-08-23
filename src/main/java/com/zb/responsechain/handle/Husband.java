@@ -1,5 +1,6 @@
 package com.zb.responsechain.handle;
 
+import com.zb.responsechain.woman.IWoman;
 import com.zb.responsechain.woman.WomanType;
 import lombok.extern.slf4j.Slf4j;
 
@@ -12,8 +13,8 @@ public class Husband extends Handler {
         super(typeToHandle);
     }
 
-    public void response() {
-        log.info("老公同意了");
+    public void response(IWoman woman) {
+        log.info("夫人的请求是:{},丈夫同意了!", woman.getRequest());
     }
 
 }

@@ -20,8 +20,7 @@ public class Client {
         Random random = new Random();
         List<IWoman> women = new ArrayList<IWoman>();
         for (int i = 0; i < 10; i++) {
-            Woman woman = new Woman(WomanType.values()[random.nextInt(2)], "我要去旅游!");
-            women.add(woman);
+            women.add(new Woman(WomanType.values()[random.nextInt(3)], "我要去旅游!" + i));
         }
 
         Handler father = new Father(WomanType.Young);

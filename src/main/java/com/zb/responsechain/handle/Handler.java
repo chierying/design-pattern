@@ -18,8 +18,7 @@ public abstract class Handler {
 
     public void handleRequest(IWoman woman) {
         if (woman.getType() == typeToHandle) {
-            log.info("请求是:{}", woman.getRequest());
-            response();
+            response(woman);
         } else {
             if (next != null) {
                 // 交给下一个处理
@@ -30,7 +29,7 @@ public abstract class Handler {
         }
     }
 
-    public abstract void response();
+    public abstract void response(IWoman woman);
 
     public void setNext(Handler next) {
         this.next = next;
